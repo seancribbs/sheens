@@ -3,7 +3,7 @@
 all:	test
 
 test:
-	cd core && go get golang.org/x/tools/cmd/stringer && go generate && go test
+	cd core && go get golang.org/x/tools/cmd/stringer github.com/campoy/jsonenums && go generate && go test
 	cd crew && go test 
 	cd tools && go test
 	cd interpreters/goja && go test
